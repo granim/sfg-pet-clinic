@@ -1,4 +1,3 @@
-/*
 package sfgpetclinic;
 
 import org.junit.Test;
@@ -15,4 +14,4 @@ public class SfgPetClinicApplicationTests {
     }
 
 }
-*/
+
