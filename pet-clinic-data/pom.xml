@@ -11,6 +11,9 @@
 
     <artifactId>pet-clinic-data</artifactId>
 
+    <properties>
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -58,7 +61,5 @@
             </plugin>
         </plugins>
     </build>
-
-
 
 </project>
