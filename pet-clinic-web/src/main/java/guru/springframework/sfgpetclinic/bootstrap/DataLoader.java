@@ -2,8 +2,6 @@ package guru.springframework.sfgpetclinic.bootstrap;
 
 import guru.springframework.sfgpetclinic.Services.OwnerService;
 import guru.springframework.sfgpetclinic.Services.VetService;
-import guru.springframework.sfgpetclinic.Services.map.OwnerServiceMap;
-import guru.springframework.sfgpetclinic.Services.map.VetServiceMap;
 import guru.springframework.sfgpetclinic.model.Owner;
 import guru.springframework.sfgpetclinic.model.Vet;
 import org.springframework.boot.CommandLineRunner;
@@ -12,15 +10,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class DataLoader implements CommandLineRunner {
 
+
     private final OwnerService ownerService;
     private final VetService vetService;
 
-
-    public DataLoader(){
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
-
 
     @Override
     public void run(String... args) throws Exception {
