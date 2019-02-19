@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Service
-@Profile("")
+@Profile("springdatajpa")
 public class SpecialitySDJpaService implements SpecialtyService {
 
     public SpecialitySDJpaService(SpecialtyRepository specialtyRepository) {
