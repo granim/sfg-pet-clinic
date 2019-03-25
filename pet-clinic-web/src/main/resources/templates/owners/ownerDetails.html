@@ -4,11 +4,9 @@
   th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
 
   <body>
-  
-  
+
     <h2>Owner Information</h2>
-  
-  
+
     <table class="table table-striped" th:object="${owner}">
       <tr>
         <th>Name</th>
@@ -49,7 +47,7 @@
             <dd
               th:text="${#temporals.format(pet.birthDate, 'yyyy-MM-dd')}" /></dd>
             <dt>Type</dt>
-            <dd th:text="${pet.type}" /></dd>
+            <dd th:text="${pet.petType}" /></dd>
           </dl>
         </td>
         <td valign="top">
